@@ -18,19 +18,22 @@ a:hover{
   .clearfix {
      *zoom:1;
   } 
+  
 body{
-    width: 375;
-    height: 6770;
+    -webkit-font-smoothing: antialiased; /*文字抗锯齿chrome、safari*/ 
+    -moz-osx-font-smoothing: grayscale; /*文字抗锯齿firefox*/
+    width: 375px;
+    height: 6770px;
     background: #eee;
 }
 .juzhon{
     text-align: center;
 }
-.top{   
-    left: 50%;
+.top{ 
+    z-index: 1;  
+    width: 375px;
     position: fixed;
-    top: 0;
-    background: pink;
+    background: #FF4500 ;
     height: 20px;
 }
 .banner{
@@ -40,31 +43,34 @@ body{
     position: absolute;
     bottom: -7px;
 }
+.banner p{
+    margin:0 auto;
+}
 .header{
-    font-size: 300px;
+    font-size: 220px;
 }
 h4{
-    font-size: 80px;
+    font-size: 38px;
 }
 .text {
     margin-top: 35px;
-    height: 100px;
+    width: 375px;
 }
 .text svg{
     font-size: 50px;
-    height: 100px;
-    line-height: 100px;
 }
    
 .duihua{
     position: relative;
     margin: 0 35px;
-    font-size: 20px;
-    height: 100px;
-    line-height: 100px;
+    width: 200px;
     border-radius: 20px;
-    border: 2px solid pink;
-    background: red;
+    background: #FF7F50 ;
+}
+.text .duihua .neiron{
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 260px;
 }
 .jiao{
     position: absolute;
@@ -75,20 +81,25 @@ h4{
     width: 0;  
 }
 .leftjiao{
-    top: 37px;
-    left: -30px;
+    top: 3px;
+    left: -20px;
     border: 15px solid transparent;
-    border-right-color:blue;   
+    border-right-color: #FF7F50 ;   
 }
 .rightjiao{
     border: 15px solid transparent;
-    border-left-color:blue;  
-    top: 37px;
-    right: -30px;
+    border-left-color: 	#FF7F50 ;  
+    top: 3px;
+    right: -20px;
 }
 .left{
     float: left;
 }
 .right{
     float: right;
+}
+.bottom{
+    background: #FF8C00 ;
+    height: 15px;
+    line-height: 15px;
 }
