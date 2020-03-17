@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  } 
+body{
+    width: 375;
+    height: 6770;
+    background: #eee;
+}
+.juzhon{
+    text-align: center;
+}
+.top{   
+    left: 50%;
+    position: fixed;
+    top: 0;
+    background: pink;
+    height: 20px;
+}
+.banner{
+    position: relative;
+}
+.banner .bian{
+    position: absolute;
+    bottom: -7px;
+}
+.header{
+    font-size: 300px;
+}
+h4{
+    font-size: 80px;
+}
+.text {
+    margin-top: 35px;
+    height: 100px;
+}
+.text svg{
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
+}
+   
+.duihua{
+    position: relative;
+    margin: 0 35px;
+    font-size: 20px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 20px;
+    border: 2px solid pink;
+    background: red;
+}
+.jiao{
+    position: absolute;
+    height: 100px;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    width: 0;  
+}
+.leftjiao{
+    top: 37px;
+    left: -30px;
+    border: 15px solid transparent;
+    border-right-color:blue;   
+}
+.rightjiao{
+    border: 15px solid transparent;
+    border-left-color:blue;  
+    top: 37px;
+    right: -30px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
