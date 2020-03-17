@@ -23,14 +23,10 @@ body{
     -webkit-font-smoothing: antialiased; /*文字抗锯齿chrome、safari*/ 
     -moz-osx-font-smoothing: grayscale; /*文字抗锯齿firefox*/
     width: 375px;
-    height: 6770px;
     background: #eee;
 }
-.juzhon{
-    text-align: center;
-}
 .top{ 
-    z-index: 1;  
+    z-index: 2;  
     width: 375px;
     position: fixed;
     background: #FF4500 ;
@@ -47,6 +43,9 @@ body{
     margin:0 auto;
 }
 .header{
+    width: 375px;
+    position: fixed;
+    text-align: center;
     font-size: 220px;
 }
 h4{
@@ -64,13 +63,14 @@ h4{
     position: relative;
     margin: 0 35px;
     width: 200px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #FF7F50 ;
 }
 .text .duihua .neiron{
+    overflow: hidden;
     padding: 5px 10px;
     font-size: 20px;
-    width: 260px;
+    width: 180px;
 }
 .jiao{
     position: absolute;
@@ -82,7 +82,7 @@ h4{
 }
 .leftjiao{
     top: 2px;
-    left: -20px;
+    left: -22px;
     border: 15px solid transparent;
     border-right-color: #FF7F50 ;   
 }
@@ -90,7 +90,7 @@ h4{
     border: 15px solid transparent;
     border-left-color: 	#FF7F50 ;  
     top: 2px;
-    right: -20px;
+    right: -22px;
 }
 .left{
     float: left;
@@ -103,3 +103,15 @@ h4{
     height: 17px;
     line-height: 17px;
 }
+.o:hover{
+    animation: T 1s;
+    opacity: 100%;
+}
+.o{
+    opacity: 0;
+}
+@keyframes T{
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
