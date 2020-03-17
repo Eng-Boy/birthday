@@ -81,7 +81,7 @@ h4{
     width: 0;  
 }
 .leftjiao{
-    top: 3px;
+    top: 2px;
     left: -20px;
     border: 15px solid transparent;
     border-right-color: #FF7F50 ;   
@@ -89,7 +89,7 @@ h4{
 .rightjiao{
     border: 15px solid transparent;
     border-left-color: 	#FF7F50 ;  
-    top: 3px;
+    top: 2px;
     right: -20px;
 }
 .left{
@@ -100,6 +100,6 @@ h4{
 }
 .bottom{
     background: #FF8C00 ;
-    height: 15px;
-    line-height: 15px;
+    height: 17px;
+    line-height: 17px;
 }
