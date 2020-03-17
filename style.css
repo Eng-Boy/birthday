@@ -104,15 +104,4 @@ h4{
     height: 17px;
     line-height: 17px;
 }
-.o:hover{
-   
-    opacity: 100%;
-}
-.o{
-    opacity: 20%;
-}
-@keyframes T{
-    0%{opacity: 0;}
-    100%{opacity: 100%;}
-}
 
