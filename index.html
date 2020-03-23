@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> happy birthday</title>
+    <title>Happy birthday!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="http://q.qlogo.cn/headimg_dl?dst_uin=2856494106&spec=640" />
 </head>
@@ -26,7 +26,7 @@
     <div class="top ">
         <div class="banner clearfix">
             <p class="left">年年有今日</p>
-            <p class="left"> 岁岁有今朝</p>
+            <p class="right"> 岁岁有今朝</p>
             <div class="bian">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-lianhuan-"></use>
@@ -69,8 +69,8 @@
     <!--留言1开始-->
     <div class="clearfix">
         <!--左留言框-->
-        <div class="text clearfix">
-            <svg class="icon left" aria-hidden="true">
+        <div class="text clearfix o">
+            <svg class="icon left " aria-hidden="true">
                 <use xlink:href="#icon-xiaohuangya"></use>
             </svg>
             <div class="duihua left">
@@ -92,14 +92,14 @@
         </div>
         <!--留言1结束-->
         <!--留言2开始-->
-        <div class="clearfix">
+        <div class="clearfix o">
             <!--左留言框-->
             <div class="text clearfix">
                 <svg class="icon left" aria-hidden="true">
                     <use xlink:href="#icon-xiaohuangya"></use>
                 </svg>
                 <div class="duihua left">
-                    <div class="neiron x1">相遇是缘分，相知是理解，相见好困难，相聚好短暂。唉，我只有在遥远的地方捎上一份祝福，佳节愉快，万事顺利。</div>
+                    <div class="neiron ">相遇是缘分，相知是理解，相见好困难，相聚好短暂。唉，我只有在遥远的地方捎上一份祝福，佳节愉快，万事顺利。</div>
                     <div class="leftjiao jiao"></div>
                 </div>
             </div>
@@ -118,12 +118,12 @@
             <!--留言3开始-->
             <div class="clearfix">
                 <!--左留言框-->
-                <div class="text clearfix">
+                <div class="text clearfix o">
                     <svg class="icon left" aria-hidden="true">
                         <use xlink:href="#icon-xiaohuangya"></use>
                     </svg>
                     <div class="duihua left">
-                        <div class="neiron x1">在你生日的这一天，将快乐的音符，作为礼物送给你，愿您拥有365个美丽的日子，衷心地祝福你</div>
+                        <div class="neiron ">在你生日的这一天，将快乐的音符，作为礼物送给你，愿您拥有365个美丽的日子，衷心地祝福你</div>
                         <div class="leftjiao jiao"></div>
                     </div>
                 </div>
@@ -142,12 +142,12 @@
                 <!--留言4开始-->
                 <div class="clearfix">
                     <!--左留言框-->
-                    <div class="text clearfix">
+                    <div class="text clearfix o">
                         <svg class="icon left" aria-hidden="true">
                             <use xlink:href="#icon-xiaohuangya"></use>
                         </svg>
                         <div class="duihua left">
-                            <div class="neiron x1">隔着不远不近的时空，我常会在不经意之间想起你，就像今天的微风，偶尔带来的清爽，那样随心和自然，有风吹到你时，记住那就是我托风给你的问候！
+                            <div class="neiron ">隔着不远不近的时空，我常会在不经意之间想起你，就像今天的微风，偶尔带来的清爽，那样随心和自然，有风吹到你时，记住那就是我托风给你的问候！
                             </div>
                             <div class="leftjiao jiao"></div>
                         </div>
@@ -170,12 +170,12 @@
                     <!--留言5开始-->
                     <div class="clearfix">
                         <!--左留言框-->
-                        <div class="text clearfix">
+                        <div class="text clearfix o">
                             <svg class="icon left" aria-hidden="true">
                                 <use xlink:href="#icon-xiaohuangya"></use>
                             </svg>
                             <div class="duihua left">
-                                <div class="neiron x1">夜里等待着你生日的来临，当钟声敲响的一瞬间我将与你共享属于你的一天，我的心与你同在。</div>
+                                <div class="neiron ">夜里等待着你生日的来临，当钟声敲响的一瞬间我将与你共享属于你的一天，我的心与你同在。</div>
                                 <div class="leftjiao jiao"></div>
                             </div>
                         </div>
@@ -194,12 +194,12 @@
                         <!--留言6开始-->
                         <div class="clearfix">
                             <!--左留言框-->
-                            <div class="text clearfix">
+                            <div class="text clearfix o">
                                 <svg class="icon left" aria-hidden="true">
                                     <use xlink:href="#icon-xiaohuangya"></use>
                                 </svg>
                                 <div class="duihua left">
-                                    <div class="neiron x1">
+                                    <div class="neiron ">
                                         阳光虽然灿烂，但不及你笑容甜甜；月光虽然皎洁，但不如你的烛光亲切；今天日光、月光、星光、灯光、烛光都为你点亮，只为祝愿你生日快乐幸福</div>
                                     <div class="leftjiao jiao"></div>
                                 </div>
@@ -217,6 +217,20 @@
                                 </div>
                             </div>
                             <!--留言6结束-->
+                            <script>
+                                var talk = document.querySelectorAll('.text');
+                                var timer = 0;
+                                var time = setInterval(function () {
+                                    if (timer == 12) {
+                                        clearInterval(time);
+                                    }
+                                    else {
+                                        talk[timer].className = 'text clearfix tanchu '
+                                        console.log(talk);
+                                        timer++;
+                                    }
+                                }, 5000)
+                            </script>
 
                             <!--留言结束 底部开始-->
                             <div class="bottom clearfix ">

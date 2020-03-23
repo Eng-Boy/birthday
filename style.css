@@ -31,6 +31,10 @@ body{
     background: #FF4500 ;
     height: 20px;
 }
+.o{
+    position: relative;
+    z-index: -2;  
+}
 .banner{
     position: relative;
 }
@@ -42,16 +46,21 @@ body{
     margin:0 auto;
 }
 .header{
+    height: 335px;
+    width: 220px;
+    z-index: 2;  
     position: fixed;
     top: 25%;
     left: 25%;
     text-align: center;
     font-size: 220px;
+    animation: move 1s linear  1;
 }
 h4{
     font-size: 38px;
 }
 .text {
+    visibility: hidden;
     margin-top: 35px;
 }
 .text svg{
@@ -102,4 +111,18 @@ h4{
     background: #FF8C00 ;
     height: 17px;
     line-height: 17px;
+}
+.tanchu{
+    visibility: visible;
+    animation: move 2s linear  1;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+transform: translate(0,10px);
+    }
+    100%{
+        opacity: 100;
+        transform: translate(0);
+    }
 }
